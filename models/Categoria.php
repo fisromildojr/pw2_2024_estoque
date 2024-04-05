@@ -7,8 +7,8 @@ class Categoria {
         $id,
         $nome,
     ){
-        $this->id;
-        $this->nome;
+        $this->id = $id;
+        $this->nome = $nome;
     }
 
     function getId(){
