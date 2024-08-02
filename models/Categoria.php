@@ -5,7 +5,7 @@ class Categoria {
 
     function __construct(
         $id,
-        $nome,
+        $nome
     ){
         $this->id = $id;
         $this->nome = $nome;

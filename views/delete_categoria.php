@@ -6,5 +6,8 @@ if (isset($_GET["id"])) {
     $categoriaController->delete($_GET["id"]);
 
     // Voltando pra tela anterior
-    header("Location: ?pg=categorias");
+    // header("Location: ?pg=categorias");
+    echo '<script type="text/javascript">
+             window.location = "?pg=categorias";
+          </script>';
 }

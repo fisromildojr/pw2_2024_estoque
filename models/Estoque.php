@@ -7,7 +7,7 @@ class Estoque {
     private $quantidade;
 
     function __construct(
-        $id
+        $id,
         Produto $produto,
         $quantidade,
     ){

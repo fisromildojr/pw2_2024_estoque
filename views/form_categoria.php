@@ -25,7 +25,10 @@ if (
 	}
 
 	// Voltando pra tela anterior
-	header("Location: ?pg=categorias");
+	// header("Location: ?pg=categorias");
+	echo '<script type="text/javascript">
+             window.location = "?pg=categorias";
+          </script>';
 
 	// Encerra a execução do script php
 	exit();

@@ -1,10 +1,10 @@
 <?php
 class Conexao {
     private static $conexao = null;
-    private static $host = "10.5.10.10";
-    private static $usuario = "desenv";
-    private static $senha = "123456";
-    private static $banco = "pw2_2024_romildo";
+    private static $host = "pw2_2024_mysql";
+    private static $usuario = "root";
+    private static $senha = "1234";
+    private static $banco = "estoque_bd";
     private static $porta = "3306";
 
     private function __construct() {}

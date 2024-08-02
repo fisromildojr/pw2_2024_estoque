@@ -9,15 +9,24 @@ class Produto {
     private $preco;
 
     function __construct(
+        $id,
         $nome,
         $descricao,
         Categoria $categoria,
-        $preco,
+        $preco
     ){
+        $this->id = $id;
         $this->nome = $nome;
         $this->descricao = $descricao;
         $this->categoria = $categoria;
         $this->preco = $preco;
+    }
+
+    function getCategoria(){
+        return $this->categoria;
+    }
+    function setCategoria(Categoria $categoria){
+        $this->categoria = $categoria;
     }
 
     function getId(){
@@ -39,13 +48,6 @@ class Produto {
     }
     function setDescricao($descricao){
         $this->descricao = $descricao;
-    }
-
-    function getCategoria(){
-        return $this->categoria;
-    }
-    function setCategoria(Categoria $categoria){
-        $this->categoria = $categoria;
     }
 
     function getPreco(){
