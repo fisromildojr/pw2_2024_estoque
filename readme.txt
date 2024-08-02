@@ -1,3 +1,5 @@
+## Executando o projeto com Docker ##
+
 # 1º Passo - Criar rede para os containers do projeto ####
 docker network create -d bridge pw2_2024_network
 
